@@ -1,0 +1,121 @@
+<!-- django tags -->
+{% extends "zennapp/base.html" %}
+{% load static %}
+{%block title%}Home| {%endblock title%}
+{%block body %}
+
+<!-- This is below bootstrap classes -->
+  <div class="container-fluid px-0 ">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        {% comment %} Using below img class this :-object-fit-cover w-100 h-100 we can set sizeing width and height of the img {% endcomment %}
+        <img src="{% static 'zennapp\img\Cd.jpg' %}" class="object-fit-cover w-100 h-100" alt="image_not_found_1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome our new Zenn Studies cources </h5>
+          <p>The best Industry demanded courses we provided </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{%static  'zennapp\img\Ai2.jpg' %}" class="object-fit-cover w-100 h-100" alt="image_not_found_2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>All new trending technology cources available</h5>
+          <p>Indias 1st ranking courses will provided by us</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static  'zennapp\img\Ai.jpg' %}" class="object-fit-cover w-100 h-100" alt="image_not_found_3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>We have best counselers they give you best carrier path</h5>
+          <p>We have best well qualified experinced teachers </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- this is below cards making code seprate card for each course started  -->
+
+<!-- Below bootstrap code make seprated card for our each course for my zenn studies Institute  -->
+
+<!-- This below class is for we can give marging and padding properties to our div container -->
+<div class="container my-4 ">
+  <h1 class="my-2 text-center ">This is our range of courses  we provide </h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="{% static  'zennapp\img\Coding.jpg' %}" class="d-block w-100" alt="image_not_found_3">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Web
+            development </text>
+        </svg>
+        <div class="card-body">
+          <p class="card-text">This is our web development course using Django framework and python programming language.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="{% static  'zennapp\img\DS.jpg' %}" class="d-block w-100" alt="image_not_found_card_2">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+            dy=".3em">Data Science</text>
+        </svg>
+        <div class="card-body">
+          <p class="card-text">this is our best cources in ever thats include all important topics and technology.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="{% static  'zennapp/img/PY.jpg' %}" class="d-block w-100 h-100" alt="image_not_found_card_2">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+            dy=".3em">Python Fullstack</text>
+        </svg>
+        <div class="card-body">
+          <p class="card-text">The begining to advanced level knowled provided by us and best high level python projects</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%endblock body%} 
+{% comment %} This above tag is django tag {% endcomment %}

@@ -1,0 +1,5 @@
+Zenn web is Django project 
+
+and 
+
+zennapp is Django app or model 
